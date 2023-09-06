@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<head>
-    <title></title>
-</head>
-<body>
-    LOL
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+    <button type="button" onclick="location.href='{% url 'log' %}' ">Logout</button>
+{% endblock %}
