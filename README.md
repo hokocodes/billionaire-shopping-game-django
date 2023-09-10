@@ -1,2 +1,0 @@
-# billionaire-shopping-game-django
- 
