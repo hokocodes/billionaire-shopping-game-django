@@ -100,17 +100,10 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-'default': {
-        'ENGINE': 'django_cockroachdb',
-        'NAME': 'defaultdb',
-        'USER': 'hokole',
-        'PASSWORD': 'CT4Rnrv1EvDC9h5s_wyrGA',
-        'HOST': 'billionaire-shopping-game-12908.5xj.cockroachlabs.cloud',
-        'PORT': '26257',
-        'OPTIONS': {
-            'sslmode': 'verify-full'
-        },
-    },
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 
